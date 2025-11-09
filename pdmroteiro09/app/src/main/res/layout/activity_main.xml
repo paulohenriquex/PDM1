@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_media_play"
+            android:drawablePadding="8dp"
+            android:text="Frag 1 (Replace)"
+            android:onClick="load1"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:drawablePadding="8dp"
+            android:text="Frag 2 (Replace)"
+            android:onClick="load2"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawablePadding="8dp"
+            android:text="REMOVER (Clear)"
+            android:onClick="clear"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:drawablePadding="8dp"
+            android:text="SOBREPOR (Add)"
+            android:onClick="sobrepor" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
